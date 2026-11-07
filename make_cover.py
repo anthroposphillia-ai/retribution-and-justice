@@ -16,12 +16,13 @@ GRAY = (150, 150, 150)
 DIM = (95, 95, 95)
 RED = (198, 40, 40)
 
-TITLE = ["확정된 형벌은", "집행되지 않는다"]
-SUB = "사형제 재검토 원문 아카이브"
+TITLE = ["사형,", "집행되지 않는 형벌"]
+SUB = "원문 아카이브 — 조문 · 판결 · 통계"
 AUTHOR = "지은이 · 응징과 정의"
 EN = "Retribution and Justice"
 FOOT = "법령 · 헌법재판소 결정 · 대법원 판결 · 법무부 통계"
 LIC = "CC BY 4.0"
+SEAL = "응징과 정의"
 
 
 def fit(text, path, max_w, start, floor=20):
@@ -34,16 +35,19 @@ def fit(text, path, max_w, start, floor=20):
     return ImageFont.truetype(path, floor)
 
 
-def seal(w=112, h=376):
+def seal(w=116):
+    chars = [c for c in SEAL if c.strip()]
+    pitch = 60
+    h = len(chars) * pitch + 44
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     d.rectangle([0, 0, w - 1, h - 1], outline=RED + (255,), width=4)
-    f = ImageFont.truetype(SERIF, 52)
-    y = (h - 6 * 58) // 2
-    for ch in "사형제재검토":
+    f = ImageFont.truetype(SERIF, 54)
+    y = (h - len(chars) * pitch) // 2
+    for ch in chars:
         tw = f.getlength(ch)
         d.text(((w - tw) / 2, y), ch, font=f, fill=RED + (255,))
-        y += 58
+        y += pitch
     return im.rotate(-4, expand=True, resample=getattr(Image, "Resampling", Image).BICUBIC)
 
 
@@ -52,22 +56,21 @@ def main():
     im = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(im)
 
-    # 상단 얇은 선
-    d.line([(110, 392), (330, 392)], fill=WHITE, width=4)
+    st = seal()
+    stx, sty = W - 84 - st.width, 452
+    d.line([(110, sty - 30), (330, sty - 30)], fill=WHITE, width=4)
 
-    y = 470
+    y = sty
     for line in TITLE:
-        f = fit(line, SERIF, 980, 132)
+        f = fit(line, SERIF, 800, 150)
         tw = f.getlength(line)
-        d.text(((W - tw) / 2 - 40, y), line, font=f, fill=WHITE)
-        y += int(f.size * 1.42)
+        d.text((110, y), line, font=f, fill=WHITE)
+        print(f"  '{line}' → {int(f.size)}pt / 폭 {int(tw)}px")
+        y += int(f.size * 1.34)
 
-    # 부제
-    fs = fit(SUB, SERIF, 900, 56)
-    d.text(((W - fs.getlength(SUB)) / 2 - 40, y + 24), SUB, font=fs, fill=GRAY)
-
-    # 도장 (우상단)
-    im.paste(seal(), (1196 - 112, 452), seal())
+    fs = fit(SUB, SERIF, 900, 54)
+    d.text((110, y + 26), SUB, font=fs, fill=GRAY)
+    im.paste(st, (stx, sty), st)
 
     # 하단 블록
     fa = ImageFont.truetype(SANS, 40)
