@@ -6,3 +6,4 @@
 - [04. 사형이 나오는 네 개의 칸](pages/04-sentencing-guidelines.md)
 - [05. 사형에는 시효가 없다](pages/05-no-limitation.md)
 - [06. 헌재 2010년 5대 4](pages/06-constitutional-2010.md)
+- [07. 헌재는 미집행을 판단한 적이 없다](pages/07-constitutional-inaction.md)
