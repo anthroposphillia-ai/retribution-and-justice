@@ -21,3 +21,4 @@
 - [19. 국제기구 — 유엔 결의와 사형수 현상](pages/19-international-bodies.md)
 - [20. 채점표 — 무엇을 재는가](pages/20-scoring-table.md)
 - [21. 규칙과 사전등록 — 표본 2건에서 규칙을 고치지 않는다](pages/21-rules-and-preregistration.md)
+- [22. 정정 이력 — 이 책이 틀린 기록](pages/22-corrections.md)
