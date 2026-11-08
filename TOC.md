@@ -13,3 +13,4 @@
 - [11. 국제규범은 사형을 어떻게 규정하는가](pages/11-international-norms.md)
 - [12. 오판 — 되돌릴 수 없는 판단](pages/12-wrongful-conviction.md)
 - [13. 억제효과 — 없다는 것을 먼저 인정한다](pages/13-deterrence.md)
+- [14. 비용 — 형벌 선택의 근거가 될 수 있는가](pages/14-cost.md)
