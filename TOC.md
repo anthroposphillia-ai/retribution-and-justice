@@ -17,3 +17,4 @@
 - [15. 국가의 형벌권은 어디까지인가](pages/15-punitive-power.md)
 - [16. 여론 — 무엇을 물으면 답이 달라지는가](pages/16-public-opinion.md)
 - [17. 정부와 국가인권위원회](pages/17-government-and-commission.md)
+- [18. 시민사회 — 폐지 운동의 실제](pages/18-civil-society.md)
