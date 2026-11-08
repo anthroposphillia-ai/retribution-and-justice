@@ -16,3 +16,4 @@
 - [14. 비용 — 형벌 선택의 근거가 될 수 있는가](pages/14-cost.md)
 - [15. 국가의 형벌권은 어디까지인가](pages/15-punitive-power.md)
 - [16. 여론 — 무엇을 물으면 답이 달라지는가](pages/16-public-opinion.md)
+- [17. 정부와 국가인권위원회](pages/17-government-and-commission.md)
