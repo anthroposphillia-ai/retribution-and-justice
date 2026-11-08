@@ -11,3 +11,4 @@
 - [09. 1997년 12월 30일](pages/09-december-30-1997.md)
 - [10. 52명 — 확정된 채로 늙는 사람들](pages/10-fifty-two.md)
 - [11. 국제규범은 사형을 어떻게 규정하는가](pages/11-international-norms.md)
+- [12. 오판 — 되돌릴 수 없는 판단](pages/12-wrongful-conviction.md)
