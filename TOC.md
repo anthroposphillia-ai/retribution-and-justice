@@ -8,3 +8,4 @@
 - [06. 헌재 2010년 5대 4](pages/06-constitutional-2010.md)
 - [07. 헌재는 미집행을 판단한 적이 없다](pages/07-constitutional-inaction.md)
 - [08. 대법원이 사형을 파기한 사건](pages/08-supreme-court-reversal.md)
+- [09. 1997년 12월 30일](pages/09-december-30-1997.md)
