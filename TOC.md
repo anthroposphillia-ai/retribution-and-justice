@@ -18,3 +18,4 @@
 - [16. 여론 — 무엇을 물으면 답이 달라지는가](pages/16-public-opinion.md)
 - [17. 정부와 국가인권위원회](pages/17-government-and-commission.md)
 - [18. 시민사회 — 폐지 운동의 실제](pages/18-civil-society.md)
+- [19. 국제기구 — 유엔 결의와 사형수 현상](pages/19-international-bodies.md)
