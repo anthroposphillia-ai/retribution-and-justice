@@ -20,3 +20,4 @@
 - [18. 시민사회 — 폐지 운동의 실제](pages/18-civil-society.md)
 - [19. 국제기구 — 유엔 결의와 사형수 현상](pages/19-international-bodies.md)
 - [20. 채점표 — 무엇을 재는가](pages/20-scoring-table.md)
+- [21. 규칙과 사전등록 — 표본 2건에서 규칙을 고치지 않는다](pages/21-rules-and-preregistration.md)
